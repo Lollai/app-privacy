@@ -31,7 +31,7 @@
     <div class="brand">Cozy Zombie Odyssey</div>
     <h1>Privacy Policy</h1>
     <p class="meta">Last updated: 10 October 2026</p>
-    <p class="status"><strong>Release status.</strong> The game is being prepared for release. The Google AdMob advertising described below is planned for future versions and is not active in the current preview. This policy explains local game data, support correspondence, earlier preview diagnostics, and how advertising will use data when introduced.</p>
+    <p class="status"><strong>Version coverage.</strong> This policy covers advertising-enabled previews starting with version 0.50.0 and future advertising-enabled releases. These previews include Google Mobile Ads and Google's User Messaging Platform (UMP), and use Google's sample advertisements for testing. Earlier previews did not include AdMob. Test advertisements do not generate advertising revenue, but SDK initialisation, privacy checks and ad requests can still involve data processing as described below.</p>
   </header>
   <nav aria-label="Policy contents">
     <ul>
@@ -60,8 +60,9 @@
   </section>
 
   <section id="advertising">
-    <h2>4. Google AdMob advertising — planned</h2>
-    <p>Future advertising-enabled versions will offer optional rewarded advertisements through Google AdMob and its Google Play services components. A rewarded video starts after you choose the offer, and its game reward is described before that choice.</p>
+    <h2>4. Optional Google AdMob advertisements</h2>
+    <p>Advertising-enabled versions offer optional rewarded advertisements through Google AdMob and its Google Play services components. The game describes the reward before you choose to watch. Videos are shown only after you select an offer; starting or retrying a game does not require watching a video.</p>
+    <p>Version 0.50.0 is a phone-test preview using Google's sample ad units. A later release may use the game's own AdMob units. Test mode concerns ad delivery and revenue; it does not mean the advertising SDK is absent or that every privacy-related request is offline. See <a href="https://developers.google.com/admob/unity/test-ads">Google's explanation of test advertisements</a>.</p>
     <p>When the advertising SDK requests or displays an ad, Google may process the following:</p>
     <ul>
       <li>An IP address, which may be used to estimate an approximate location.</li>
@@ -71,14 +72,15 @@
     </ul>
     <p>This processing supports advertising, measurement and fraud prevention. It can occur when an ad is requested or loaded, even if you do not finish watching a video. These data can identify a device or relate to an individual; they are not necessarily anonymous. Google's SDK transmits user data using TLS. See <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure">Google's advertising SDK data disclosure</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>.</p>
     <h2>5. Advertising choices</h2>
-    <p>The planned advertising release will present required consent choices before requesting ads and offer a way to reopen privacy choices where required. Those controls are not present in the current preview. Consent to watch a rewarded video is separate from consent to personalised advertising or access to device identifiers.</p>
+    <p>At launch, Google's UMP SDK checks whether a privacy message is required. The game presents the required Google consent form before requesting advertisements. Privacy requests themselves may communicate with Google. Where Google requires a privacy options entry point, open the game's Settings and choose <strong>PRIVACY CHOICES</strong> to review or change your choices. The game uses the SDK's current consent status to determine whether advertisements may be requested. See <a href="https://developers.google.com/admob/unity/privacy">Google's UMP information</a>.</p>
+    <p>Choosing to watch a rewarded video is separate from consenting to personalised advertising or access to device identifiers. Your privacy choices are stored by the Google SDK; local game records separately track rewards and cooldowns.</p>
     <p>You can decline or withdraw consent where consent is requested. Withdrawal does not affect processing lawfully carried out beforehand. Playing the game does not require agreeing to personalised advertising. The availability and type of rewarded advertisements may depend on your choices, age-related restrictions and applicable requirements. Non-personalised ads may still process data and require consent for certain purposes.</p>
     <p>Android's privacy settings also provide controls for the advertising ID. Changing those settings does not automatically delete data already held by providers. See <a href="https://policies.google.com/technologies/ads">Google's advertising and device controls</a>.</p>
   </section>
 
   <section id="diagnostics">
     <h2>6. Unity and earlier previews</h2>
-    <p>The game is built with Unity. Unity Engine Diagnostics has been disabled in the project for subsequent builds. Unity Analytics, Unity Ads and Firebase Analytics or Crashlytics are not used in the current game.</p>
+    <p>The game is built with Unity. Unity Engine Diagnostics is disabled in the advertising-enabled preview starting with version 0.50.0. Unity Analytics, Unity Ads and Firebase Analytics or Crashlytics are not used in the current game. This is separate from the diagnostic information processed by Google's advertising SDK described above.</p>
     <p>Earlier preview builds were made with Unity Engine Diagnostics enabled and could have sent installation identifiers and technical diagnostic records to Unity to investigate errors and stability. Disabling the setting does not modify an APK already installed or erase previously transmitted records. Actual collection from those previews has not been confirmed.</p>
     <p>For this service, Unity acts as the developer's processor and documents a default retention of 90 days. If you have a concern about an earlier preview, email the developer with the app version and relevant details. Requests concerning provider-held records may require an installation identifier and assistance from Unity. See <a href="https://docs.unity.com/en-us/cloud/developer-data/privacy-overview">Unity Diagnostics privacy information</a> and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's policy for game players</a>.</p>
   </section>
@@ -88,7 +90,7 @@
     <p>Where the GDPR applies, local game records are used to provide the game functions you request (Article 6(1)(b), where personal data are involved). Support correspondence is processed for the legitimate interest in responding to requests and resolving problems (Article 6(1)(f)), or to comply with a legal obligation when handling statutory requests (Article 6(1)(c)). Earlier preview diagnostics, if collected, serve the legitimate interest in investigating game errors and stability (Article 6(1)(f)).</p>
     <p>In advertising-enabled versions, consent is the basis for advertising processing that requires it (Article 6(1)(a)), including personalised advertising and device access where applicable. Necessary advertising security and fraud-prevention processing may rely on legitimate interests or legal obligations where permitted. Google explains its own purposes and legal bases in its privacy information. Merely continuing to play does not provide consent.</p>
     <h2>8. Providers and international processing</h2>
-    <p>The relevant providers are Google for support email and planned advertising, Unity for any earlier diagnostic records, and GitHub for this policy website. Google generally acts as an independent controller for AdMob. For European advertising data, Google's controller terms identify Google Ireland Limited as the relevant end controller. Google and its advertising partners may receive data in accordance with the applicable choices and provider disclosures. See <a href="https://business.safety.google/adsservices/">Google's service roles</a> and <a href="https://business.safety.google/controllerterms/">controller terms</a>.</p>
+    <p>The relevant providers are Google for support email, advertisements and advertising privacy choices, Unity for any earlier diagnostic records, and GitHub for this policy website. Google generally acts as an independent controller for AdMob. For European advertising data, Google's controller terms identify Google Ireland Limited as the relevant end controller. Google and its advertising partners may receive data in accordance with the applicable choices and provider disclosures. See <a href="https://business.safety.google/adsservices/">Google's service roles</a> and <a href="https://business.safety.google/controllerterms/">controller terms</a>.</p>
     <p>Providers may process information outside your country, including in the United States. Google's terms describe the Data Privacy Framework for applicable transfers to certified US entities and contractual safeguards where relevant. GitHub describes its standard contractual clauses and Data Privacy Framework participation in its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#international-data-transfers">Privacy Statement</a>. Unity's diagnostic arrangements are described in its <a href="https://unity.com/legal/unity-data-processing-addendum-dpa">Data Processing Addendum</a>. The linked documents explain provider-specific safeguards and how to request further information.</p>
   </section>
 
@@ -105,8 +107,8 @@
 
   <section id="young-players">
     <h2>11. Young players</h2>
-    <p>Cozy Zombie Odyssey is intended for teenagers and adults aged <strong>13 and older</strong> and is not designed for children under 13. This intended audience is separate from the content rating assigned by an app store. The current preview does not include an age check.</p>
-    <p>Being 13 or older does not always mean being old enough to consent independently to data processing. Requirements vary by country. Before advertising is activated, the release will apply the relevant protections for minors and consent requirements, including parental authorisation where required, rather than treating every player as an adult. Personalised advertising is restricted for young players under Google's applicable age treatment.</p>
+    <p>Cozy Zombie Odyssey is intended for teenagers and adults aged <strong>13 and older</strong> and is not designed for children under 13. This intended audience is separate from the content rating assigned by an app store. The game does not ask for or store your age or date of birth, and the advertising consent form is not an age verification system.</p>
+    <p>Being 13 or older does not always mean being old enough to consent independently to data processing; requirements vary by country. Google applies age-related advertising protections in cases where its services identify eligible young users, including certain supervised accounts. This does not mean that the game verifies every player's age or obtains parental authorisation. See <a href="https://developers.google.com/admob/unity/targeting">Google's advertising age-treatment information</a>.</p>
     <p>If you are a parent or guardian and believe a child has provided personal data in connection with the game, contact <a href="mailto:lollaideveloper@gmail.com">lollaideveloper@gmail.com</a> so the concern and any necessary deletion request can be addressed.</p>
   </section>
 
@@ -115,7 +117,7 @@
     <p>This page is published through GitHub Pages. GitHub logs visitors' IP addresses for security purposes, as described in its <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">Pages documentation</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>. The developer has not added advertisements, analytics scripts, external fonts or contact forms to this page.</p>
     <h2>13. Security and changes</h2>
     <p>The developer takes reasonable steps to protect information handled for support. The protection of local records also depends on your device and its security settings. No storage or transmission method can guarantee complete security.</p>
-    <p>This policy will be updated when the game's data practices change, including before an advertising-enabled release. The date above identifies the latest revision. Material changes will be communicated and new consent requested where required.</p>
+    <p>This policy will be updated when the game's data practices change, including changes from sample advertisements to a monetised release. The date above identifies the latest revision. Material changes will be communicated and new consent requested where required.</p>
   </section>
   <footer>
     <p>Cozy Zombie Odyssey · Privacy contact: <a href="mailto:lollaideveloper@gmail.com">lollaideveloper@gmail.com</a></p>
